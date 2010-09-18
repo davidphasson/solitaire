@@ -1,0 +1,332 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Sol.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "Solitaire.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Sol"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Sol Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SOL_DIALOG DIALOGEX 0, 0, 413, 274
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Solitaire"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Status Bar",IDC_StatusText,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,0,265,186,9,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    LTEXT           "Status Bar 2",IDC_StatusText2,186,265,227,9,0,
+                    WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+END
+
+IDD_CARDBACK DIALOG DISCARDABLE  0, 0, 291, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Card Back Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,234,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,234,24,50,14
+    CONTROL         4015,IDC_STATIC,"Static",SS_BITMAP,15,135,47,59
+    CONTROL         260,IDC_STATIC,"Static",SS_BITMAP,81,135,47,59
+    LTEXT           "Pick a Card Back",IDC_STATIC,16,14,137,13
+    CONTROL         262,IDC_STATIC,"Static",SS_BITMAP,143,135,47,59
+    CONTROL         "Default",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,119,41,13
+    CONTROL         "Bubbles",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,81,119,
+                    42,13
+    CONTROL         "Wind",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,144,118,38,
+                    14
+    CONTROL         274,IDC_STATIC,"Static",SS_BITMAP,207,136,47,59
+    CONTROL         273,IDC_STATIC,"Static",SS_BITMAP,16,31,47,59
+    CONTROL         278,IDC_STATIC,"Static",SS_BITMAP,80,31,47,59
+    CONTROL         271,IDC_STATIC,"Static",SS_BITMAP,143,31,47,59
+    CONTROL         "Heat",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,208,117,38,
+                    14
+    CONTROL         "Plasma",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,15,94,38,
+                    14
+    CONTROL         "Bicycle",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,81,95,
+                    38,14
+    CONTROL         "Cartoon Network",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,
+                    144,95,66,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Sol MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Sol\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Sol.EXE\0"
+            VALUE "ProductName", "Sol Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CARDBACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Game",                   ID_NEW_GAME
+        MENUITEM "",                            ID_FILE, GRAYED
+        MENUITEM "Card Back...",                IDR_CARDBACK
+        MENUITEM "Background...",               ID_CHGBACKGRND
+        MENUITEM "",                            ID_FILE, GRAYED
+        MENUITEM "&Quit",                       IDCANCEL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "About Sol...",                ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_THREEHRTS           BITMAP  DISCARDABLE     "res\\bmp00010.bmp"
+IDB_FIVECLUBS           BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_THREECLUBS          BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_FOURCLUBS           BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_ACECLUBS            BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_SEVENCLUBS          BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+IDB_EIGHTCLUBS          BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+IDB_DEFAULTBACK         BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
+IDB_NINEDMDS            BITMAP  DISCARDABLE     "res\\bmp00007.bmp"
+IDB_EIGHTDMDS           BITMAP  DISCARDABLE     "res\\bmp00008.bmp"
+IDB_QUEENSPADES         BITMAP  DISCARDABLE     "res\\bmp00009.bmp"
+IDB_EIGHTSPADES         BITMAP  DISCARDABLE     "res\\bmp00012.bmp"
+IDB_NINESPADES          BITMAP  DISCARDABLE     "res\\bmp00013.bmp"
+IDB_SEVENHRTS           BITMAP  DISCARDABLE     "res\\bmp00011.bmp"
+IDB_SIXCLUBS            BITMAP  DISCARDABLE     "res\\sixclubs.bmp"
+IDB_ERROR               BITMAP  DISCARDABLE     "res\\kingspad.bmp"
+IDB_THREEDMDS           BITMAP  DISCARDABLE     "res\\bmp00014.bmp"
+IDB_FOURSPADES          BITMAP  DISCARDABLE     "res\\bmp00015.bmp"
+IDB_JACKDMDS            BITMAP  DISCARDABLE     "res\\bmp00016.bmp"
+IDB_TENDMDS             BITMAP  DISCARDABLE     "res\\bmp00017.bmp"
+IDB_QUEENCLUBS          BITMAP  DISCARDABLE     "res\\bmp00018.bmp"
+IDB_KINGDMDS            BITMAP  DISCARDABLE     "res\\bmp00019.bmp"
+IDB_SIXHRTS             BITMAP  DISCARDABLE     "res\\bmp00020.bmp"
+IDB_TENCLUBS            BITMAP  DISCARDABLE     "res\\bmp00021.bmp"
+IDB_TWOHRTS             BITMAP  DISCARDABLE     "res\\bmp00022.bmp"
+IDB_TWOCLUBS            BITMAP  DISCARDABLE     "res\\bmp00023.bmp"
+IDB_TWODMDS             BITMAP  DISCARDABLE     "res\\bmp00024.bmp"
+IDB_SEVENDMDS           BITMAP  DISCARDABLE     "res\\bmp00025.bmp"
+IDB_ACEHRTS             BITMAP  DISCARDABLE     "res\\acehrts.bmp"
+IDB_TENHRTS             BITMAP  DISCARDABLE     "res\\bmp00026.bmp"
+IDB_QUEENHRTS           BITMAP  DISCARDABLE     "res\\bmp00027.bmp"
+IDB_FOURDMDS            BITMAP  DISCARDABLE     "res\\bmp00028.bmp"
+IDB_JACKSPADES          BITMAP  DISCARDABLE     "res\\bmp00029.bmp"
+IDB_TENSPADES           BITMAP  DISCARDABLE     "res\\tenspade.bmp"
+IDB_TWOSPADES           BITMAP  DISCARDABLE     "res\\bmp00030.bmp"
+IDB_FIVEHRTS            BITMAP  DISCARDABLE     "res\\bmp00031.bmp"
+IDB_NINEHRTS            BITMAP  DISCARDABLE     "res\\bmp00032.bmp"
+IDB_KINGCLUBS           BITMAP  DISCARDABLE     "res\\kingclub.bmp"
+IDB_ACESPADES           BITMAP  DISCARDABLE     "res\\bmp00033.bmp"
+IDB_ACEDMDS             BITMAP  DISCARDABLE     "res\\bmp00034.bmp"
+IDB_JACKHRTS            BITMAP  DISCARDABLE     "res\\bmp00035.bmp"
+IDB_SEVENSPADES         BITMAP  DISCARDABLE     "res\\bmp00036.bmp"
+IDB_FIVESPADES          BITMAP  DISCARDABLE     "res\\bmp00037.bmp"
+IDB_THREESPADES         BITMAP  DISCARDABLE     "res\\bmp00038.bmp"
+IDB_SIXDMDS             BITMAP  DISCARDABLE     "res\\bmp00039.bmp"
+IDB_NINECLUBS           BITMAP  DISCARDABLE     "res\\bmp00040.bmp"
+IDB_EIGHTHRTS           BITMAP  DISCARDABLE     "res\\bmp00041.bmp"
+IDB_JACKCLUBS           BITMAP  DISCARDABLE     "res\\jackclub.bmp"
+IDB_FIVEDMDS            BITMAP  DISCARDABLE     "res\\bmp00042.bmp"
+IDB_FOURHRTS            BITMAP  DISCARDABLE     "res\\bmp00043.bmp"
+IDB_SIXSPADES           BITMAP  DISCARDABLE     "res\\bmp00044.bmp"
+IDB_KINGHRTS            BITMAP  DISCARDABLE     "res\\bmp00045.bmp"
+IDB_KINGSPADES          BITMAP  DISCARDABLE     "res\\bmp00046.bmp"
+IDB_QUEENDMDS           BITMAP  DISCARDABLE     "res\\bmp00047.bmp"
+IDB_DECK                BITMAP  DISCARDABLE     "res\\threedmd.bmp"
+IDB_BACK0               BITMAP  DISCARDABLE     "res\\hey.bmp"
+IDB_BACK1               BITMAP  DISCARDABLE     "res\\hey2.bmp"
+IDB_EMPTYPILE           BITMAP  DISCARDABLE     "res\\bmp00048.bmp"
+IDB_CARDMASK            BITMAP  DISCARDABLE     "res\\untitled.bmp"
+IDB_BACK5               BITMAP  DISCARDABLE     "res\\back.bmp"
+IDB_BACK3               BITMAP  DISCARDABLE     "res\\psyc2_bk.bmp"
+IDB_BACK2               BITMAP  DISCARDABLE     "res\\psyc3_bk.bmp"
+IDB_BACK4               BITMAP  DISCARDABLE     "res\\bicycleback01.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Sol..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Sol.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
